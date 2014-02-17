@@ -15,6 +15,12 @@
     
     [Crashlytics startWithAPIKey:@"263e33cba7a0a8804ec757ba8607fc77514dca33"];
     
+    // Google Analytics.
+    [GAI sharedInstance].trackUncaughtExceptions = NO;
+    [GAI sharedInstance].dispatchInterval = 10;
+    [[GAI sharedInstance] trackerWithTrackingId:@"UA-29785237-8"];
+    
+    
     // Override point for customization after application launch.
     return YES;
 }

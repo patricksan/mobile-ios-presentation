@@ -35,22 +35,30 @@
 }
 
 - (DataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
-{   
+{
     // Return the data view controller for the given index.
     if (([self.pageData count] == 0) || (index >= [self.pageData count])) {
         return nil;
     }
     
-    // Create a new view controller and pass suitable data.
-    DataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
-    dataViewController.dataObject = self.pageData[index];
-    return dataViewController;
+    // in the case of form, return a specific controller type FormViewController
+    if (index == [self.pageData count] -1){
+        //this is the last object, so it is the form.
+        FormViewController *formViewController = [storyboard instantiateViewControllerWithIdentifier:@"FormViewController"];
+        formViewController.dataObject = self.pageData[index];
+        return formViewController;
+    }else{
+        // Create a new view controller and pass suitable data.
+        DataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
+        dataViewController.dataObject = self.pageData[index];
+        return dataViewController;
+    }
 }
 
 - (NSUInteger)indexOfViewController:(DataViewController *)viewController
-{   
-     // Return the index of the given data view controller.
-     // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
+{
+    // Return the index of the given data view controller.
+    // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
     return [self.pageData indexOfObject:viewController.dataObject];
 }
 

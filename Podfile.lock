@@ -18,22 +18,25 @@ PODS:
   - AFNetworking/UIKit (2.1.0):
     - AFNetworking/NSURLConnection
   - FXBlurView (1.5.3)
+  - GoogleAnalytics-iOS-SDK (3.0.3)
   - MBProgressHUD (0.8)
   - SBJson (3.2)
-  - TestFlightSDK (2.1.1-beta)
+  - TestFlightSDK (2.1.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.1)
   - FXBlurView (~> 1.5.3)
+  - GoogleAnalytics-iOS-SDK (~> 3.0.3)
   - MBProgressHUD (= 0.8)
   - SBJson (~> 3.2)
-  - TestFlightSDK (= 2.1.1-beta)
+  - TestFlightSDK (~> 2.1.1-beta)
 
 SPEC CHECKSUMS:
   AFNetworking: c7d7901a83f631414c7eda1737261f696101a5cd
   FXBlurView: 8d662dd5b4ba15a1a0e97235501326fbdfb2b755
+  GoogleAnalytics-iOS-SDK: 7b0e55cfe5e70d60478a7b105f15ac71e8bc373e
   MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
   SBJson: abc2bf2baef456d5dae213f9826fe2b6fdf19861
-  TestFlightSDK: dea28c16f0bf65c49c4ed8939b2ae0b0ed9bf8b0
+  TestFlightSDK: 79290b6bddb29601c92d648692f4ab1815a78e90
 
 COCOAPODS: 0.29.0
