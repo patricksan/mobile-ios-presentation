@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataPage.h"
 
 @interface DataViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *dataLabel;
-@property (strong, nonatomic) id dataObject;
+@property (strong, nonatomic) IBOutlet UIImageView *dataImage;
+@property (strong, nonatomic) DataPage *dataObject;
 
 @end

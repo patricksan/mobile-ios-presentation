@@ -18,6 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor =  UIColorFromRGB(0XFAF3EF);
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,7 +30,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.dataLabel.text = [self.dataObject description];
+    self.dataLabel.text = [self.dataObject label];
+    self.dataImage.image = [self.dataObject image];
 }
 
 @end

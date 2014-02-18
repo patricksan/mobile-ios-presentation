@@ -18,6 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor =  UIColorFromRGB(0XFAF3EF);
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,8 +32,17 @@
     [super viewWillAppear:animated];
 }
 - (IBAction)saveForm:(id)sender {
+    NSLog(@"Save form");
+}
+
+- (IBAction)sendDetailsToServer:(id)sender {
+    NSLog(@"Send details to Server");
     
-    NSLog(@"Form did work");
+    // ask for password
+    
+    // if confirms
+    
+    // send to server
 }
 
 @end

@@ -15,4 +15,5 @@
     #import <Foundation/Foundation.h>
     #import "GAI.h"
     #import "GAIDictionaryBuilder.h"
+    #import "Utilities.h"
 #endif

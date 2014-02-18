@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "FormViewController.h"
+#import "DataPage.h"
 
 @class DataViewController;
 

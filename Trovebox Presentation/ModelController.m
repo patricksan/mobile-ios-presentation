@@ -29,7 +29,23 @@
 {
     self = [super init];
     if (self) {
-        _pageData = @[@"Page1", @"Page2", @"Page3",@"Form"];
+        
+        // define page 1
+        DataPage *page1 = [[DataPage alloc] init];
+        page1.label=@"Page1";
+        page1.image = [UIImage imageNamed:@"1.jpg"];
+        
+        // define page 2
+        DataPage *page2 = [[DataPage alloc] init];
+        page2.label=@"Page2";
+        page2.image = [UIImage imageNamed:@"2.jpg"];
+        
+        // define page 3
+        DataPage *page3 = [[DataPage alloc] init];
+        page3.label=@"Page3";
+        page3.image = [UIImage imageNamed:@"3.jpg"];
+        
+        _pageData = @[page1, page2, page3,@"Form"];
     }
     return self;
 }
@@ -45,7 +61,6 @@
     if (index == [self.pageData count] -1){
         //this is the last object, so it is the form.
         FormViewController *formViewController = [storyboard instantiateViewControllerWithIdentifier:@"FormViewController"];
-        formViewController.dataObject = self.pageData[index];
         return formViewController;
     }else{
         // Create a new view controller and pass suitable data.

@@ -10,5 +10,10 @@
 #import "DataViewController.h"
 
 @interface FormViewController : DataViewController
+@property (strong, nonatomic) IBOutlet UITextField *textFieldName;
+@property (strong, nonatomic) IBOutlet UITextField *textFieldEmail;
+@property (strong, nonatomic) IBOutlet UITextField *textFieldPhone;
+- (IBAction)saveForm:(id)sender;
+- (IBAction)sendDetailsToServer:(id)sender;
 
 @end
