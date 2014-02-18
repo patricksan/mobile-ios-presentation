@@ -33,19 +33,34 @@
         // define page 1
         DataPage *page1 = [[DataPage alloc] init];
         page1.label=@"Page1";
-        page1.image = [UIImage imageNamed:@"1.jpg"];
+        page1.image = [UIImage imageNamed:@"1a.jpg"];
         
         // define page 2
         DataPage *page2 = [[DataPage alloc] init];
         page2.label=@"Page2";
-        page2.image = [UIImage imageNamed:@"2.jpg"];
+        page2.image = [UIImage imageNamed:@"2ab.jpg"];
         
         // define page 3
         DataPage *page3 = [[DataPage alloc] init];
         page3.label=@"Page3";
-        page3.image = [UIImage imageNamed:@"3.jpg"];
+        page3.image = [UIImage imageNamed:@"3ab.jpg"];
         
-        _pageData = @[page1, page2, page3,@"Form"];
+        // define page 4
+        DataPage *page4 = [[DataPage alloc] init];
+        page4.label=@"Page4";
+        page4.image = [UIImage imageNamed:@"4ab.jpg"];
+        
+        // define page 5
+        DataPage *page5 = [[DataPage alloc] init];
+        page5.label=@"Page5";
+        page5.image = [UIImage imageNamed:@"5ab.jpg"];
+        
+        // define page 6
+        DataPage *page6 = [[DataPage alloc] init];
+        page6.label=@"Page6";
+        page6.image = [UIImage imageNamed:@"6ab.jpg"];
+        
+        _pageData = @[page1, page2, page3, page4, page5, page6, @"Form"];
     }
     return self;
 }
