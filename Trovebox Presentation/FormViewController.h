@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DataViewController.h"
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
-@interface FormViewController : DataViewController
+#import "DataViewController.h"
+#import "Customer+Methods.h"
+
+@interface FormViewController : DataViewController <MFMailComposeViewControllerDelegate>
+
 @property (strong, nonatomic) IBOutlet UITextField *textFieldName;
 @property (strong, nonatomic) IBOutlet UITextField *textFieldEmail;
 @property (strong, nonatomic) IBOutlet UITextField *textFieldPhone;

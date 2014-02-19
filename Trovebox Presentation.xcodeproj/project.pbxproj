@@ -35,6 +35,11 @@
 		CDF0E4FB18B3FD4900305BDC /* 4ab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDF0E4F418B3FD4900305BDC /* 4ab.jpg */; };
 		CDF0E4FC18B3FD4900305BDC /* 5ab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDF0E4F518B3FD4900305BDC /* 5ab.jpg */; };
 		CDF0E4FD18B3FD4900305BDC /* 6ab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDF0E4F618B3FD4900305BDC /* 6ab.jpg */; };
+		CDF0E50018B5453E00305BDC /* Trovebox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDF0E4FE18B5453E00305BDC /* Trovebox.xcdatamodeld */; };
+		CDF0E50418B5459C00305BDC /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF0E50318B5459C00305BDC /* Customer.m */; };
+		CDF0E50718B545D900305BDC /* Customer+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF0E50618B545D900305BDC /* Customer+Methods.m */; };
+		CDF0E50918B546BE00305BDC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF0E50818B546BE00305BDC /* CoreData.framework */; };
+		CDF0E50E18B54C9400305BDC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF0E50D18B54C9400305BDC /* MessageUI.framework */; };
 		F4A9AC20ACE04DF7B501A6F3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4EFC4ED8B24D23885DD470 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +94,13 @@
 		CDF0E4F418B3FD4900305BDC /* 4ab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4ab.jpg; sourceTree = "<group>"; };
 		CDF0E4F518B3FD4900305BDC /* 5ab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5ab.jpg; sourceTree = "<group>"; };
 		CDF0E4F618B3FD4900305BDC /* 6ab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6ab.jpg; sourceTree = "<group>"; };
+		CDF0E4FF18B5453E00305BDC /* Trovebox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Trovebox.xcdatamodel; sourceTree = "<group>"; };
+		CDF0E50218B5459C00305BDC /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
+		CDF0E50318B5459C00305BDC /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Customer.m; sourceTree = "<group>"; };
+		CDF0E50518B545D900305BDC /* Customer+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Customer+Methods.h"; sourceTree = "<group>"; };
+		CDF0E50618B545D900305BDC /* Customer+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Customer+Methods.m"; sourceTree = "<group>"; };
+		CDF0E50818B546BE00305BDC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CDF0E50D18B54C9400305BDC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF0E50E18B54C9400305BDC /* MessageUI.framework in Frameworks */,
+				CDF0E50918B546BE00305BDC /* CoreData.framework in Frameworks */,
 				CD4A176418A949EE006ECFD1 /* CoreGraphics.framework in Frameworks */,
 				CD2E0A9B18AE7A1E00D408F8 /* Crashlytics.framework in Frameworks */,
 				CD4A176618A949EE006ECFD1 /* UIKit.framework in Frameworks */,
@@ -140,6 +154,8 @@
 		CD4A176018A949EE006ECFD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDF0E50D18B54C9400305BDC /* MessageUI.framework */,
+				CDF0E50818B546BE00305BDC /* CoreData.framework */,
 				CD2E0A9A18AE7A1E00D408F8 /* Crashlytics.framework */,
 				CD4A176118A949EE006ECFD1 /* Foundation.framework */,
 				CD4A176318A949EE006ECFD1 /* CoreGraphics.framework */,
@@ -153,6 +169,9 @@
 		CD4A176718A949EE006ECFD1 /* Trovebox Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CDF0E50A18B546FC00305BDC /* images */,
+				CDF0E50118B5454900305BDC /* db */,
+				CD4A177C18A949EE006ECFD1 /* Main.storyboard */,
 				CD4A177018A949EE006ECFD1 /* AppDelegate.h */,
 				CD4A177118A949EE006ECFD1 /* AppDelegate.m */,
 				CD4A177318A949EE006ECFD1 /* RootViewController.h */,
@@ -165,16 +184,6 @@
 				CD4A177A18A949EE006ECFD1 /* ModelController.m */,
 				CDF0E4ED18B3F0BA00305BDC /* DataPage.h */,
 				CDF0E4EE18B3F0BA00305BDC /* DataPage.m */,
-				CD4A177C18A949EE006ECFD1 /* Main.storyboard */,
-				CDF0E4E318B3D5B300305BDC /* Default-Portrait@2x~ipad.png */,
-				CDF0E4E518B3D5BD00305BDC /* Default-Portrait~ipad.png */,
-				CDF0E4F018B3FD4900305BDC /* 1a.jpg */,
-				CDF0E4F118B3FD4900305BDC /* 1b.jpg */,
-				CDF0E4F218B3FD4900305BDC /* 2ab.jpg */,
-				CDF0E4F318B3FD4900305BDC /* 3ab.jpg */,
-				CDF0E4F418B3FD4900305BDC /* 4ab.jpg */,
-				CDF0E4F518B3FD4900305BDC /* 5ab.jpg */,
-				CDF0E4F618B3FD4900305BDC /* 6ab.jpg */,
 				CDF0E4E018B3900B00305BDC /* Utilities.h */,
 				CDF0E4E118B3900B00305BDC /* Utilities.m */,
 				CD4A176818A949EE006ECFD1 /* Supporting Files */,
@@ -209,6 +218,34 @@
 				CD4A178F18A949EE006ECFD1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDF0E50118B5454900305BDC /* db */ = {
+			isa = PBXGroup;
+			children = (
+				CDF0E4FE18B5453E00305BDC /* Trovebox.xcdatamodeld */,
+				CDF0E50218B5459C00305BDC /* Customer.h */,
+				CDF0E50318B5459C00305BDC /* Customer.m */,
+				CDF0E50518B545D900305BDC /* Customer+Methods.h */,
+				CDF0E50618B545D900305BDC /* Customer+Methods.m */,
+			);
+			name = db;
+			sourceTree = "<group>";
+		};
+		CDF0E50A18B546FC00305BDC /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CDF0E4E318B3D5B300305BDC /* Default-Portrait@2x~ipad.png */,
+				CDF0E4E518B3D5BD00305BDC /* Default-Portrait~ipad.png */,
+				CDF0E4F018B3FD4900305BDC /* 1a.jpg */,
+				CDF0E4F118B3FD4900305BDC /* 1b.jpg */,
+				CDF0E4F218B3FD4900305BDC /* 2ab.jpg */,
+				CDF0E4F318B3FD4900305BDC /* 3ab.jpg */,
+				CDF0E4F418B3FD4900305BDC /* 4ab.jpg */,
+				CDF0E4F518B3FD4900305BDC /* 5ab.jpg */,
+				CDF0E4F618B3FD4900305BDC /* 6ab.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDF0E4D918B2947F00305BDC /* FormViewController.m in Sources */,
+				CDF0E50018B5453E00305BDC /* Trovebox.xcdatamodeld in Sources */,
 				CD4A177818A949EE006ECFD1 /* DataViewController.m in Sources */,
 				CD4A177218A949EE006ECFD1 /* AppDelegate.m in Sources */,
 				CD4A177B18A949EE006ECFD1 /* ModelController.m in Sources */,
@@ -376,6 +414,8 @@
 				CD4A176E18A949EE006ECFD1 /* main.m in Sources */,
 				CDF0E4E218B3900B00305BDC /* Utilities.m in Sources */,
 				CD4A177518A949EE006ECFD1 /* RootViewController.m in Sources */,
+				CDF0E50418B5459C00305BDC /* Customer.m in Sources */,
+				CDF0E50718B545D900305BDC /* Customer+Methods.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +650,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CDF0E4FE18B5453E00305BDC /* Trovebox.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CDF0E4FF18B5453E00305BDC /* Trovebox.xcdatamodel */,
+			);
+			currentVersion = CDF0E4FF18B5453E00305BDC /* Trovebox.xcdatamodel */;
+			path = Trovebox.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CD4A175618A949EE006ECFD1 /* Project object */;
 }
