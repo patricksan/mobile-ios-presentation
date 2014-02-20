@@ -2,7 +2,7 @@
 //  Customer.m
 //  Trovebox Presentation
 //
-//  Created by Patrick Santana on 19/02/14.
+//  Created by Patrick Santana on 20/02/14.
 //  Copyright (c) 2014 Trovebox. All rights reserved.
 //
 
@@ -15,5 +15,7 @@
 @dynamic email;
 @dynamic phone;
 @dynamic date;
+@dynamic company;
+@dynamic notes;
 
 @end

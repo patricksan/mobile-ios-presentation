@@ -9,16 +9,19 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
+#import <QuartzCore/QuartzCore.h>
 
 #import "DataViewController.h"
 #import "Customer+Methods.h"
 
-@interface FormViewController : DataViewController <MFMailComposeViewControllerDelegate>
+@interface FormViewController : DataViewController <MFMailComposeViewControllerDelegate, UITextFieldDelegate, UITextViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *textFieldName;
 @property (strong, nonatomic) IBOutlet UITextField *textFieldEmail;
 @property (strong, nonatomic) IBOutlet UITextField *textFieldPhone;
+@property (strong, nonatomic) IBOutlet UITextField *textFieldCompany;
+@property (strong, nonatomic) IBOutlet UITextView *textViewNotes;
+
 - (IBAction)saveForm:(id)sender;
 - (IBAction)sendDetailsToServer:(id)sender;
-
 @end
