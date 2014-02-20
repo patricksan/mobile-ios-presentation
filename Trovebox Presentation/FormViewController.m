@@ -31,6 +31,13 @@
     self.textViewNotes.layer.borderWidth = 0.2f;
     self.textViewNotes.layer.borderColor = [[UIColor grayColor] CGColor];
     self.textViewNotes.layer.cornerRadius = 8;
+    
+    [self prefersStatusBarHidden];
+}
+
+-(BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning

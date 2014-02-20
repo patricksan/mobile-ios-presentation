@@ -24,6 +24,7 @@
     [GAI sharedInstance].dispatchInterval = 10;
     [[GAI sharedInstance] trackerWithTrackingId:@"UA-29785237-8"];
     
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     // Override point for customization after application launch.
     return YES;
