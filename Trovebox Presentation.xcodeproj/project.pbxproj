@@ -60,7 +60,7 @@
 		25FCB911E7A049EABCD01DBD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		AD4EFC4ED8B24D23885DD470 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2E0A9A18AE7A1E00D408F8 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		CD4A175E18A949EE006ECFD1 /* Presentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Presentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4A175E18A949EE006ECFD1 /* Scale Presentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scale Presentation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4A176118A949EE006ECFD1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CD4A176318A949EE006ECFD1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CD4A176518A949EE006ECFD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -152,7 +152,7 @@
 		CD4A175F18A949EE006ECFD1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD4A175E18A949EE006ECFD1 /* Presentation.app */,
+				CD4A175E18A949EE006ECFD1 /* Scale Presentation.app */,
 				CD4A178518A949EE006ECFD1 /* Trovebox PresentationTests.xctest */,
 			);
 			name = Products;
@@ -278,7 +278,7 @@
 			);
 			name = "Trovebox Presentation";
 			productName = "Trovebox Presentation";
-			productReference = CD4A175E18A949EE006ECFD1 /* Presentation.app */;
+			productReference = CD4A175E18A949EE006ECFD1 /* Scale Presentation.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CD4A178418A949EE006ECFD1 /* Trovebox PresentationTests */ = {

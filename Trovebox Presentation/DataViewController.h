@@ -14,5 +14,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *dataLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *dataImage;
 @property (strong, nonatomic) DataPage *dataObject;
+@property (strong, nonatomic) id delegate;
 
+
+- (IBAction)requestMoreInformation:(id)sender;
 @end

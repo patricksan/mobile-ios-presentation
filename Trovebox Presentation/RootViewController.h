@@ -12,4 +12,7 @@
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 
+
+- (void) flipToNoreInformationPage:(id)sender;
+
 @end

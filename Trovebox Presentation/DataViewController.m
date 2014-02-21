@@ -40,4 +40,8 @@
     self.dataImage.image = [self.dataObject image];
 }
 
+- (IBAction)requestMoreInformation:(id)sender {
+    NSLog(@"Button clicked requestMoreInformation");
+    [self.delegate requestMoreInformation:sender];
+}
 @end

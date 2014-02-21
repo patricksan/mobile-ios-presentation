@@ -11,8 +11,8 @@
 #import <MessageUI/MFMailComposeViewController.h>
 #import <QuartzCore/QuartzCore.h>
 
-#import "DataViewController.h"
 #import "Customer+Methods.h"
+#import "DataViewController.h"
 
 @interface FormViewController : DataViewController <MFMailComposeViewControllerDelegate, UITextFieldDelegate, UITextViewDelegate>
 

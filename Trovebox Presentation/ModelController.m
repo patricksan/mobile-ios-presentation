@@ -21,6 +21,7 @@
 
 @interface ModelController()
 @property (readonly, strong, nonatomic) NSArray *pageData;
+
 @end
 
 @implementation ModelController
@@ -59,7 +60,7 @@
         DataPage *page6 = [[DataPage alloc] init];
         page6.label=@"Page6";
         page6.image = [UIImage imageNamed:@"6ab.png"];
-
+        
         // define page 7
         DataPage *page7 = [[DataPage alloc] init];
         page7.label=@"Form";
@@ -72,6 +73,7 @@
 
 - (DataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
 {
+    
     // Return the data view controller for the given index.
     if (([self.pageData count] == 0) || (index >= [self.pageData count])) {
         return nil;
@@ -82,11 +84,13 @@
         //this is the last object, so it is the form.
         FormViewController *formViewController = [storyboard instantiateViewControllerWithIdentifier:@"FormViewController"];
         formViewController.dataObject = self.pageData[index];
+        formViewController.delegate = self;
         return formViewController;
     }else{
         // Create a new view controller and pass suitable data.
         DataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
         dataViewController.dataObject = self.pageData[index];
+        dataViewController.delegate = self;
         return dataViewController;
     }
 }
@@ -124,5 +128,14 @@
     }
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
 }
+
+
+// method to go to the last page
+- (void)requestMoreInformation:(id)sender
+{
+    [((RootViewController* )self.rootDelegate) flipToNoreInformationPage:sender];
+}
+
+
 
 @end
