@@ -34,7 +34,7 @@
         // define page 1
         DataPage *page1 = [[DataPage alloc] init];
         page1.label=@"Page1";
-        page1.image = [UIImage imageNamed:@"1b.png"];
+        page1.image = [UIImage imageNamed:@"1a.png"];
         
         // define page 2
         DataPage *page2 = [[DataPage alloc] init];
